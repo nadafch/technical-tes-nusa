@@ -5,21 +5,25 @@ import moon from "../asset/moon.png";
 
 function Navbar() {
   return (
-    <div className="bg-black p-3 flex justify-between">
+    <nav className="w-full bg-black p-5 flex flex-wrap justify-between">
       <div className="flex gap-2">
         <img src={Rectangle} />
         <div className="my-auto">
-          <img src={digicoin} />
+          <a href="/">
+            <img src={digicoin} />
+          </a>
         </div>
       </div>
       <div className="flex gap-2 my-auto">
-        <h4 className="text-white mr-3">ENG/ID</h4>
-        <h4 className="text-white border-r-2"></h4>
+        <a href="/" className="text-white mr-3">
+          ENG/ID
+          <span className="text-white border-r-2 ml-4"></span>
+        </a>
         <div className="my-auto">
           <img src={moon} />
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 
